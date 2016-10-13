@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 	var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin", "comster404"];
 
+	// Request timeout in the case if data can not be fetched
 	var twitchRequestTimeout = setTimeout(function(){
 		$(".list-group").html('<li class="list-group-item notfound"><img src="dead_glitch.png" height="100px" width="100px" /><h3>Failed to get twitch resources</h3><p></p></li>');
 	}, 8000);
@@ -46,7 +47,7 @@ $("input[type='radio']").click(function(){
 
 // Filtering based on the search
 $( ".text_input" ).keyup(function() {
-	filter = $( this ).val();  //.toLowerCase();
+	filter = $( this ).val();  
 	$( "li" ).addClass("hiddenF");
 	$( "li > h3:Contains(" +filter +")").parent().removeClass("hiddenF"); 
 });
