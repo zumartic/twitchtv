@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TwitchTV</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+  
+		<div id="header">
+			<h2>TwitchTV Streamers</h2>
+			<fieldset>		
+				<div class="radio">
+					<input id="all" type="radio" name="sender" value="all" checked />
+					<label for="all">All</label>
+					<input id="online" type="radio" name="sender" value="online" />
+					<label for="online">Online</label>
+					<input id="offline" type="radio" name="sender" value="offline" />
+					<label for="offline">Offline</label><br><br>
+					<div class="search">
+						<span class="fa fa-search"></span>
+						<input class="text_input" type="text" name="search" placeholder="">
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		
+		<div id="container">
+			<ul class="list-group"></ul><hr>
+		</div>
+
+		 <div id="footer">
+			Site developed by <a href="https://fi.linkedin.com/in/sami-kangas" target="_blank">Sami Kangas 2016</a> with <a href="https://open.spotify.com/album/0I9syPxS7ZqI3pcuOQ3J1X" target="_blank"><i class="fa fa-lg fa-music"></i></a> and <i class="fa fa-lg fa-heart"></i>
+		 </div>
+
+		 <!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+  </body>
+</html>
