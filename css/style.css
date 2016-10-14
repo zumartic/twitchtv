@@ -79,8 +79,15 @@ input[type=radio]:checked + label:before {
 ul { 
 	background-color: #f9f9f9;
 	list-style-type:none;
+	/*margin-left: 180px;
+	margin-right: 200px;*/
+}
+
+@media (min-width: 1000px) {
+    ul { 
 	margin-left: 180px;
 	margin-right: 200px;
+	}
 }
 
 li {
